@@ -1,0 +1,3 @@
+SCGA Experience 2026
+
+Aprire index.html dopo aver estratto l’intero archivio. Per aggiornare GitHub Pages, caricare index.html, la cartella assets e il file Excel nella radice del repository.
