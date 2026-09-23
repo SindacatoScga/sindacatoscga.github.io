@@ -102,7 +102,7 @@ section.editorial:nth-of-type(3n){background:linear-gradient(145deg,#17231b,#101
 @media(max-width:640px){.quick-nav{top:64px}.quick-nav .wrap{justify-content:start;width:100%}.quick-nav a{padding:12px 13px;font-size:10px}.compare-visual img{aspect-ratio:4/3}.compare-visual figcaption{font-size:9px;padding:20px 8px 9px}.history-cards{grid-template-columns:1fr}.history-card:last-child{grid-column:auto}.history-card b{font-size:25px}}
 
 /* 5 KPI → 3 dimensioni → 1 Indice. The artwork remains decorative; labels are real HTML. */
-section{scroll-margin-top:125px}
+section,#modello-3d{scroll-margin-top:125px}
 .hero-visual{display:block;height:auto;aspect-ratio:auto;max-width:560px;overflow:hidden}
 .hero-render{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
 .hero-render-tag{top:24px;bottom:auto}
@@ -119,7 +119,7 @@ section{scroll-margin-top:125px}
 .history-card h3{font:700 19px ui-monospace,monospace;color:#f4d09a;margin:0 0 14px}.history-card h3 small{display:block;color:#e3eadb;font:650 11px/1.35 system-ui,sans-serif;margin-top:5px}
 .history-method{margin-top:28px;border:1px solid #8c7754;background:#29291f;padding:18px 22px;color:#f0eadf}.history-method summary{cursor:pointer;font-weight:700;color:#f0d4a7}.history-method p{margin:13px 0 0;color:#e7dfd1;font-size:14px;line-height:1.55}
 .road.transmitted:before{content:"✓";left:5px;top:2px;width:20px;height:20px;display:grid;place-items:center;color:#11301b;background:#a9e1ae;border:0;box-shadow:0 0 0 4px #2d4e34;font:700 13px/1 system-ui,sans-serif}.road.transmitted small{color:#c6eaca}
-@media(max-width:640px){section{scroll-margin-top:135px}.hero-visual{height:auto;aspect-ratio:auto}.hero-render-tag{top:14px;bottom:auto}.visual-flow{padding:14px}.visual-flow-kpis{grid-template-columns:repeat(2,1fr)}.visual-flow-kpis span:last-child{grid-column:1/-1}.visual-flow-dims{grid-template-columns:1fr}.visual-flow-dims span{min-height:43px}.calc-scenarios-grid{grid-template-columns:repeat(2,1fr)}.calc-scenarios-grid button{min-height:95px}}
+@media(max-width:640px){section,#modello-3d{scroll-margin-top:135px}.hero-visual{height:auto;aspect-ratio:auto}.hero-render-tag{top:14px;bottom:auto}.visual-flow{padding:14px}.visual-flow-kpis{grid-template-columns:repeat(2,1fr)}.visual-flow-kpis span:last-child{grid-column:1/-1}.visual-flow-dims{grid-template-columns:1fr}.visual-flow-dims span{min-height:43px}.calc-scenarios-grid{grid-template-columns:repeat(2,1fr)}.calc-scenarios-grid button{min-height:95px}}
 </style>
 </head>
 <body>
@@ -128,7 +128,7 @@ section{scroll-margin-top:125px}
   <div class="progress" id="progress"></div>
 </header>
 <nav class="quick-nav" aria-label="Sezioni principali"><div class="wrap">
-  <a href="#architettura">Modello e grafica 3D</a><a href="#simulatore">Calcolatore lavoratori</a><a href="#storico">Esempi storici 2023–2025</a>
+  <a href="#modello-3d">Modello e grafica 3D</a><a href="#simulatore">Calcolatore lavoratori</a><a href="#storico">Esempi storici 2023–2025</a>
 </div></nav>
 <main>
 <section class="hero" id="inizio">
@@ -140,7 +140,7 @@ section{scroll-margin-top:125px}
       <div class="hero-actions"><a href="#simulatore">Apri il calcolatore</a><a href="#storico">Vedi i tre esempi storici</a></div>
       <div class="scrollcue">Scorri · dal lavoro al numero, dal numero al premio ↓</div>
     </div>
-    <div class="hero-visual reveal in" aria-label="Architettura SCGA in tre livelli">
+    <div class="hero-visual reveal in" id="modello-3d" aria-label="Architettura SCGA in tre livelli">
       <img class="hero-render" alt="" aria-hidden="true" decoding="async" src="assets/architettura_3d.webp">
       <div class="hero-render-tag" aria-hidden="true">ARCHITETTURA SCGA <strong>5 KPI · 3 DIMENSIONI · 1 INDICE</strong></div>
       <div class="visual-flow" aria-label="Flusso del modello SCGA">
